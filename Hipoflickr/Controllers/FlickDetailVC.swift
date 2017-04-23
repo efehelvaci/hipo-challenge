@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FlickDetailVC.swift
 //  Hipoflickr
 //
 //  Created by Efe Helvacı on 23.04.2017.
@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class FlickDetailVC: UIViewController {
+    @IBOutlet weak var flickImage: UIImageView!
+    
+    var imageURL : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        flickImage.kf.setImage(with: URL(string: imageURL))
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

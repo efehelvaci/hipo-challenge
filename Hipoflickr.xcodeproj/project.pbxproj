@@ -7,73 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27CF1A421EAD3B4900C102C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A411EAD3B4900C102C1 /* AppDelegate.swift */; };
-		27CF1A441EAD3B4900C102C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A431EAD3B4900C102C1 /* ViewController.swift */; };
-		27CF1A471EAD3B4900C102C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CF1A451EAD3B4900C102C1 /* Main.storyboard */; };
-		27CF1A491EAD3B4900C102C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CF1A481EAD3B4900C102C1 /* Assets.xcassets */; };
-		27CF1A4C1EAD3B4900C102C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CF1A4A1EAD3B4900C102C1 /* LaunchScreen.storyboard */; };
+		240618F6A91CE7EDFB069BB7 /* Pods_Hipoflickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48E3FB3D3E29A1E94EBCA7E /* Pods_Hipoflickr.framework */; };
+		27CF1A0D1EACBCA400C102C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A0C1EACBCA400C102C1 /* AppDelegate.swift */; };
+		27CF1A121EACBCA400C102C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CF1A101EACBCA400C102C1 /* Main.storyboard */; };
+		27CF1A141EACBCA400C102C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CF1A131EACBCA400C102C1 /* Assets.xcassets */; };
+		27CF1A171EACBCA400C102C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CF1A151EACBCA400C102C1 /* LaunchScreen.storyboard */; };
+		27CF1A201EACBF7C00C102C1 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A1F1EACBF7C00C102C1 /* MainPageVC.swift */; };
+		27CF1A251EACBFCA00C102C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A241EACBFCA00C102C1 /* NetworkManager.swift */; };
+		27CF1A271EACC5BF00C102C1 /* FlickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A261EACC5BF00C102C1 /* FlickTableViewCell.swift */; };
+		27CF1A291EACCDEB00C102C1 /* Flick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A281EACCDEB00C102C1 /* Flick.swift */; };
+		27CF1A2B1EACCE0D00C102C1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A2A1EACCE0D00C102C1 /* Profile.swift */; };
+		27CF1A301EAD218200C102C1 /* ConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A2F1EAD218200C102C1 /* ConstantManager.swift */; };
+		27CF1A321EAD286A00C102C1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A311EAD286A00C102C1 /* Extensions.swift */; };
+		27CF1A341EAD2AAE00C102C1 /* FlickDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1A331EAD2AAE00C102C1 /* FlickDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27CF1A3E1EAD3B4900C102C1 /* Hipoflickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipoflickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		27CF1A411EAD3B4900C102C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27CF1A431EAD3B4900C102C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27CF1A461EAD3B4900C102C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27CF1A481EAD3B4900C102C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27CF1A4B1EAD3B4900C102C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		27CF1A4D1EAD3B4900C102C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140F2B8B9766C795482C0745 /* Pods-Hipoflickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hipoflickr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hipoflickr/Pods-Hipoflickr.release.xcconfig"; sourceTree = "<group>"; };
+		27CF1A091EACBCA400C102C1 /* Hipoflickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipoflickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CF1A0C1EACBCA400C102C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27CF1A111EACBCA400C102C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27CF1A131EACBCA400C102C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27CF1A161EACBCA400C102C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27CF1A181EACBCA400C102C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CF1A1F1EACBF7C00C102C1 /* MainPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		27CF1A241EACBFCA00C102C1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		27CF1A261EACC5BF00C102C1 /* FlickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickTableViewCell.swift; sourceTree = "<group>"; };
+		27CF1A281EACCDEB00C102C1 /* Flick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flick.swift; sourceTree = "<group>"; };
+		27CF1A2A1EACCE0D00C102C1 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		27CF1A2F1EAD218200C102C1 /* ConstantManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantManager.swift; sourceTree = "<group>"; };
+		27CF1A311EAD286A00C102C1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		27CF1A331EAD2AAE00C102C1 /* FlickDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickDetailVC.swift; sourceTree = "<group>"; };
+		F48E3FB3D3E29A1E94EBCA7E /* Pods_Hipoflickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hipoflickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBA647D3DE20550CCD82781 /* Pods-Hipoflickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hipoflickr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hipoflickr/Pods-Hipoflickr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		27CF1A3B1EAD3B4900C102C1 /* Frameworks */ = {
+		27CF1A061EACBCA400C102C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240618F6A91CE7EDFB069BB7 /* Pods_Hipoflickr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27CF1A351EAD3B4900C102C1 = {
+		27CF1A001EACBCA400C102C1 = {
 			isa = PBXGroup;
 			children = (
-				27CF1A401EAD3B4900C102C1 /* Hipoflickr */,
-				27CF1A3F1EAD3B4900C102C1 /* Products */,
+				27CF1A0B1EACBCA400C102C1 /* Hipoflickr */,
+				27CF1A0A1EACBCA400C102C1 /* Products */,
+				2F94B517588C4A0D85103784 /* Pods */,
+				638C16BEF424A595CD732D66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		27CF1A3F1EAD3B4900C102C1 /* Products */ = {
+		27CF1A0A1EACBCA400C102C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27CF1A3E1EAD3B4900C102C1 /* Hipoflickr.app */,
+				27CF1A091EACBCA400C102C1 /* Hipoflickr.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27CF1A401EAD3B4900C102C1 /* Hipoflickr */ = {
+		27CF1A0B1EACBCA400C102C1 /* Hipoflickr */ = {
 			isa = PBXGroup;
 			children = (
-				27CF1A411EAD3B4900C102C1 /* AppDelegate.swift */,
-				27CF1A431EAD3B4900C102C1 /* ViewController.swift */,
-				27CF1A451EAD3B4900C102C1 /* Main.storyboard */,
-				27CF1A481EAD3B4900C102C1 /* Assets.xcassets */,
-				27CF1A4A1EAD3B4900C102C1 /* LaunchScreen.storyboard */,
-				27CF1A4D1EAD3B4900C102C1 /* Info.plist */,
+				27CF1A221EACBFB400C102C1 /* Cells */,
+				27CF1A231EACBFB400C102C1 /* Models */,
+				27CF1A211EACBF8F00C102C1 /* Managers */,
+				27CF1A1E1EACBF5800C102C1 /* Controllers */,
+				27CF1A0C1EACBCA400C102C1 /* AppDelegate.swift */,
+				27CF1A101EACBCA400C102C1 /* Main.storyboard */,
+				27CF1A131EACBCA400C102C1 /* Assets.xcassets */,
+				27CF1A151EACBCA400C102C1 /* LaunchScreen.storyboard */,
+				27CF1A181EACBCA400C102C1 /* Info.plist */,
+				27CF1A311EAD286A00C102C1 /* Extensions.swift */,
 			);
 			path = Hipoflickr;
+			sourceTree = "<group>";
+		};
+		27CF1A1E1EACBF5800C102C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27CF1A1F1EACBF7C00C102C1 /* MainPageVC.swift */,
+				27CF1A331EAD2AAE00C102C1 /* FlickDetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27CF1A211EACBF8F00C102C1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				27CF1A241EACBFCA00C102C1 /* NetworkManager.swift */,
+				27CF1A2F1EAD218200C102C1 /* ConstantManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		27CF1A221EACBFB400C102C1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				27CF1A261EACC5BF00C102C1 /* FlickTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		27CF1A231EACBFB400C102C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27CF1A281EACCDEB00C102C1 /* Flick.swift */,
+				27CF1A2A1EACCE0D00C102C1 /* Profile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F94B517588C4A0D85103784 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBBA647D3DE20550CCD82781 /* Pods-Hipoflickr.debug.xcconfig */,
+				140F2B8B9766C795482C0745 /* Pods-Hipoflickr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		638C16BEF424A595CD732D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48E3FB3D3E29A1E94EBCA7E /* Pods_Hipoflickr.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27CF1A3D1EAD3B4900C102C1 /* Hipoflickr */ = {
+		27CF1A081EACBCA400C102C1 /* Hipoflickr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27CF1A501EAD3B4900C102C1 /* Build configuration list for PBXNativeTarget "Hipoflickr" */;
+			buildConfigurationList = 27CF1A1B1EACBCA400C102C1 /* Build configuration list for PBXNativeTarget "Hipoflickr" */;
 			buildPhases = (
-				27CF1A3A1EAD3B4900C102C1 /* Sources */,
-				27CF1A3B1EAD3B4900C102C1 /* Frameworks */,
-				27CF1A3C1EAD3B4900C102C1 /* Resources */,
+				468A0DF98475FB5F28A3D91E /* [CP] Check Pods Manifest.lock */,
+				27CF1A051EACBCA400C102C1 /* Sources */,
+				27CF1A061EACBCA400C102C1 /* Frameworks */,
+				27CF1A071EACBCA400C102C1 /* Resources */,
+				B54A7B257328F5EDF60C1B38 /* [CP] Embed Pods Frameworks */,
+				8BCBAE214E91CAC200D1B046 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -81,27 +161,27 @@
 			);
 			name = Hipoflickr;
 			productName = Hipoflickr;
-			productReference = 27CF1A3E1EAD3B4900C102C1 /* Hipoflickr.app */;
+			productReference = 27CF1A091EACBCA400C102C1 /* Hipoflickr.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		27CF1A361EAD3B4900C102C1 /* Project object */ = {
+		27CF1A011EACBCA400C102C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Efe Helvacı";
 				TargetAttributes = {
-					27CF1A3D1EAD3B4900C102C1 = {
+					27CF1A081EACBCA400C102C1 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = NG2H4EFXTS;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 27CF1A391EAD3B4900C102C1 /* Build configuration list for PBXProject "Hipoflickr" */;
+			buildConfigurationList = 27CF1A041EACBCA400C102C1 /* Build configuration list for PBXProject "Hipoflickr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,54 +189,109 @@
 				en,
 				Base,
 			);
-			mainGroup = 27CF1A351EAD3B4900C102C1;
-			productRefGroup = 27CF1A3F1EAD3B4900C102C1 /* Products */;
+			mainGroup = 27CF1A001EACBCA400C102C1;
+			productRefGroup = 27CF1A0A1EACBCA400C102C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27CF1A3D1EAD3B4900C102C1 /* Hipoflickr */,
+				27CF1A081EACBCA400C102C1 /* Hipoflickr */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		27CF1A3C1EAD3B4900C102C1 /* Resources */ = {
+		27CF1A071EACBCA400C102C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27CF1A4C1EAD3B4900C102C1 /* LaunchScreen.storyboard in Resources */,
-				27CF1A491EAD3B4900C102C1 /* Assets.xcassets in Resources */,
-				27CF1A471EAD3B4900C102C1 /* Main.storyboard in Resources */,
+				27CF1A171EACBCA400C102C1 /* LaunchScreen.storyboard in Resources */,
+				27CF1A141EACBCA400C102C1 /* Assets.xcassets in Resources */,
+				27CF1A121EACBCA400C102C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		468A0DF98475FB5F28A3D91E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCBAE214E91CAC200D1B046 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hipoflickr/Pods-Hipoflickr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54A7B257328F5EDF60C1B38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hipoflickr/Pods-Hipoflickr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		27CF1A3A1EAD3B4900C102C1 /* Sources */ = {
+		27CF1A051EACBCA400C102C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27CF1A441EAD3B4900C102C1 /* ViewController.swift in Sources */,
-				27CF1A421EAD3B4900C102C1 /* AppDelegate.swift in Sources */,
+				27CF1A251EACBFCA00C102C1 /* NetworkManager.swift in Sources */,
+				27CF1A2B1EACCE0D00C102C1 /* Profile.swift in Sources */,
+				27CF1A201EACBF7C00C102C1 /* MainPageVC.swift in Sources */,
+				27CF1A321EAD286A00C102C1 /* Extensions.swift in Sources */,
+				27CF1A0D1EACBCA400C102C1 /* AppDelegate.swift in Sources */,
+				27CF1A291EACCDEB00C102C1 /* Flick.swift in Sources */,
+				27CF1A341EAD2AAE00C102C1 /* FlickDetailVC.swift in Sources */,
+				27CF1A271EACC5BF00C102C1 /* FlickTableViewCell.swift in Sources */,
+				27CF1A301EAD218200C102C1 /* ConstantManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27CF1A451EAD3B4900C102C1 /* Main.storyboard */ = {
+		27CF1A101EACBCA400C102C1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27CF1A461EAD3B4900C102C1 /* Base */,
+				27CF1A111EACBCA400C102C1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		27CF1A4A1EAD3B4900C102C1 /* LaunchScreen.storyboard */ = {
+		27CF1A151EACBCA400C102C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27CF1A4B1EAD3B4900C102C1 /* Base */,
+				27CF1A161EACBCA400C102C1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -164,7 +299,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		27CF1A4E1EAD3B4900C102C1 /* Debug */ = {
+		27CF1A191EACBCA400C102C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +349,7 @@
 			};
 			name = Debug;
 		};
-		27CF1A4F1EAD3B4900C102C1 /* Release */ = {
+		27CF1A1A1EACBCA400C102C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,8 +392,9 @@
 			};
 			name = Release;
 		};
-		27CF1A511EAD3B4900C102C1 /* Debug */ = {
+		27CF1A1C1EACBCA400C102C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBA647D3DE20550CCD82781 /* Pods-Hipoflickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NG2H4EFXTS;
@@ -270,8 +406,9 @@
 			};
 			name = Debug;
 		};
-		27CF1A521EAD3B4900C102C1 /* Release */ = {
+		27CF1A1D1EACBCA400C102C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140F2B8B9766C795482C0745 /* Pods-Hipoflickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NG2H4EFXTS;
@@ -286,24 +423,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27CF1A391EAD3B4900C102C1 /* Build configuration list for PBXProject "Hipoflickr" */ = {
+		27CF1A041EACBCA400C102C1 /* Build configuration list for PBXProject "Hipoflickr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27CF1A4E1EAD3B4900C102C1 /* Debug */,
-				27CF1A4F1EAD3B4900C102C1 /* Release */,
+				27CF1A191EACBCA400C102C1 /* Debug */,
+				27CF1A1A1EACBCA400C102C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27CF1A501EAD3B4900C102C1 /* Build configuration list for PBXNativeTarget "Hipoflickr" */ = {
+		27CF1A1B1EACBCA400C102C1 /* Build configuration list for PBXNativeTarget "Hipoflickr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27CF1A511EAD3B4900C102C1 /* Debug */,
-				27CF1A521EAD3B4900C102C1 /* Release */,
+				27CF1A1C1EACBCA400C102C1 /* Debug */,
+				27CF1A1D1EACBCA400C102C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 27CF1A361EAD3B4900C102C1 /* Project object */;
+	rootObject = 27CF1A011EACBCA400C102C1 /* Project object */;
 }
