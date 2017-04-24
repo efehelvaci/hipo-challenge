@@ -47,6 +47,8 @@ class FlickTableViewCell: UITableViewCell, OwnerRetrievedDelegate {
         // Configure the view for the selected state
     }
     
+    // MARK: -Owner Retrieved Delegate Methods
+    
     func updateOwner(owner: Profile) {
         profileImage.kf.setImage(with: URL(string: owner.iconURL))
         profileName.text = owner.nickname

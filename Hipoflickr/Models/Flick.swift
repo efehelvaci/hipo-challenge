@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 
+// Owner is retrieved from Flickr API Asynchronously
+// Therefore when it is retrieved, delegate method will be called.
 protocol OwnerRetrievedDelegate {
     func updateOwner(owner: Profile)
 }

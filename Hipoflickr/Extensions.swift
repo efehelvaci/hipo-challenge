@@ -9,6 +9,7 @@
 import Foundation
 
 extension Date {
+    // Calculates the day between today and provided date
     func daysBetweenNow() -> Int
     {
         let calendar = Calendar.current

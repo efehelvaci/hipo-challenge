@@ -16,13 +16,16 @@ class NetworkManager : NSObject {
     private override init() {}
     
     let api_key     = "bbb3c611d71607522c5ce8322f0fed99"
-    let api_secret  = "f0cf104e231be028"
     let per_page    = 20
     let res_format  = "json"
     let baseURL     = "https://api.flickr.com/services/rest/?"
     
+    // Retrieve images from Flickr API
     func retrieveFlicks(text: String?, page: Int, completion: @escaping ([Flick]) -> Void) -> Void {
         let fullURL : String
+        
+        // If text parameter is not nil then it's a Search query
+        // Else it will get recent images
         if text != nil {
             let method  = "flickr.photos.search"
             fullURL     = baseURL + "method=\(method)&" + "api_key=\(api_key)&" + "per_page=\(per_page)&" + "page=\(page)&" + "format=\(res_format)&" + "extras=date_taken&" + "text=\(text!)&" + "nojsoncallback=1"
@@ -47,11 +50,11 @@ class NetworkManager : NSObject {
             }
             
             let json = JSON(data: responseData)
-            
             if let imagesArray = json["photos"]["photo"].array {
                 for image in imagesArray {
                     let _flick = Flick(json: image)
                     
+                    // Owner of the image is requesting from API using image owner ID
                     self.retrieveOwner(id: image["owner"].stringValue, completion: { (owner) in
                         _flick.owner = owner
                     })
@@ -64,6 +67,7 @@ class NetworkManager : NSObject {
         }
     }
     
+    // Retrieve image owners data from Flickr API
     func retrieveOwner(id: String, completion: @escaping (Profile?) -> Void ) -> Void {
         let method = "flickr.people.getInfo"
         let fullURL = baseURL + "method=\(method)&" + "api_key=\(api_key)&" + "user_id=\(id)&" + "format=\(res_format)" + "&nojsoncallback=1"

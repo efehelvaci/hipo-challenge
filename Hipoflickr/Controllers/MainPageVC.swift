@@ -14,19 +14,22 @@ class MainPageVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var flicks              = [Flick]() { didSet { tableView.reloadData() } }
-    var page                = 0
-    var currentlyPaginating = false
-    var currentlySearching : String?
+    var flicks              = [Flick]() { didSet { tableView.reloadData() } } // When images are updated, update table
+    var page                = 0  // Pagination page :D
+    var currentlyPaginating = false // To call scroll view delegate method only once at the end of the page
+    var currentlySearching  : String? // Search bar text - Set nil if bar is empty, else set searchBar.text
+    var refreshControl      : UIRefreshControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        FTIndicator.showProgressWithmessage("Loading")
-        getFlicks(text: currentlySearching)
         
-        navigationController?.hidesBarsOnSwipe = true
-        // Do any additional setup after loading the view.
+        // Pull to refresh
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshImages), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+
+        FTIndicator.showProgressWithmessage("Loading") // Loading indicator
+        getFlicks(text: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +37,8 @@ class MainPageVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // What's a flick? whatever
+    // Flick = image
+    // Gets images through NetworkManager
     func getFlicks(text: String?) {
         page = page + 1
         print("Getting page : \(page)")
@@ -42,10 +46,21 @@ class MainPageVC: UIViewController {
         NetworkManager.sharedInstance.retrieveFlicks(text: text, page: page) { (flicks) in
             self.flicks.append(contentsOf: flicks)
             self.currentlyPaginating = false
+            self.refreshControl.endRefreshing()
             FTIndicator.dismissProgress()
+            
         }
     }
+    
+    // Pull to refresh
+    func refreshImages() {
+        flicks.removeAll()
+        page = 0
+        currentlyPaginating = false
+        
+        getFlicks(text: self.currentlySearching)
 
+    }
 }
 
 // MARK: - Table view methods
@@ -86,6 +101,8 @@ extension MainPageVC : UITableViewDelegate, UITableViewDataSource, UIScrollViewD
     }
 }
 
+// MARK: -Search bar methods
+
 extension MainPageVC : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
@@ -103,6 +120,7 @@ extension MainPageVC : UISearchBarDelegate {
         getFlicks(text: self.currentlySearching)
     }
     
+    // If search bar is empty, get latest images
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == "" {
             searchBar.resignFirstResponder()

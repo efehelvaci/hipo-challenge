@@ -12,7 +12,7 @@ class ConstantManager : NSObject {
     // Constant Manager is a singleton
     static let sharedInstance = ConstantManager()
     private override init() {
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss" // Format of the retrieved date time from Flickr
     }
     
     let dateFormatter = DateFormatter()

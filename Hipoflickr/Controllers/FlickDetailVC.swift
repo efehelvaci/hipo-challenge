@@ -9,17 +9,15 @@
 import UIKit
 
 class FlickDetailVC: UIViewController {
-    @IBOutlet weak var flickImage: UIImageView!
     
-    var imageURL : String!
+    @IBOutlet weak var flickImage : UIImageView!
+    var imageURL                  : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         flickImage.kf.setImage(with: URL(string: imageURL))
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

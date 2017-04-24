@@ -56,7 +56,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ap-Gd-knd">
-                                                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                    <rect key="frame" x="8" y="12" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="gJF-sv-Bzh"/>
                                                         <constraint firstAttribute="height" constant="40" id="zBj-Ko-VeW"/>
@@ -68,7 +68,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S76-w8-c7L">
-                                                    <rect key="frame" x="56" y="28" width="223" height="0.0"/>
+                                                    <rect key="frame" x="56" y="32" width="223" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-Ar-bW8">
-                                                    <rect key="frame" x="287" y="29" width="80" height="0.0"/>
+                                                    <rect key="frame" x="287" y="32" width="80" height="0.0"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="Xrb-fd-J0f"/>
                                                     </constraints>
@@ -89,7 +89,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BuH-OO-Qfk">
-                                                    <rect key="frame" x="0.0" y="56" width="375" height="244"/>
+                                                    <rect key="frame" x="0.0" y="60" width="375" height="240"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -103,7 +103,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="BuH-OO-Qfk" secondAttribute="bottom" id="ItB-Nc-6NF"/>
                                                 <constraint firstItem="6Fn-Ar-bW8" firstAttribute="leading" secondItem="S76-w8-c7L" secondAttribute="trailing" constant="8" id="WDi-gB-DjL"/>
                                                 <constraint firstAttribute="trailing" secondItem="6Fn-Ar-bW8" secondAttribute="trailing" constant="8" id="ZHY-F0-jZ9"/>
-                                                <constraint firstItem="2ap-Gd-knd" firstAttribute="top" secondItem="20y-TL-244" secondAttribute="top" constant="8" id="iKO-Td-Kjw"/>
+                                                <constraint firstItem="2ap-Gd-knd" firstAttribute="top" secondItem="20y-TL-244" secondAttribute="top" constant="12" id="iKO-Td-Kjw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
